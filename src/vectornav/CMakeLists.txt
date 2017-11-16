@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(vectornav)
 
+catkin_package(
+        INCLUDE_DIRS include
+)
+
 ## Start Global Marker
 
 ## End Global Marker
