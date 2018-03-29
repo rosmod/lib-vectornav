@@ -28,3 +28,6 @@ add_library(vectornav
   src/vectornav/vn100.c
   src/vectornav/vncp_services.c
   src/vectornav/vndevice.c)
+
+install(DIRECTORY include/${PROJECT_NAME}/ DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION} FILES_MATCHING PATTERN "*.h" )
+install(DIRECTORY include/${PROJECT_NAME}/ DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION} FILES_MATCHING PATTERN "*.hpp" )
